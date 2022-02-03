@@ -19,12 +19,11 @@ from django.contrib import admin
 from django.urls import path, include
 
 from news.views import index
-from news.views import test
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('news/', include('news.urls')),
+    path('', include('news.urls')),
 ]
 
 if settings.DEBUG:
